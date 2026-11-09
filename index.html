@@ -122,6 +122,11 @@ h1 span{color:var(--verde)}
 .local span{color:var(--suave);font-size:.92rem}
 .local a{justify-self:start;margin-top:.3rem;font-size:.82rem;font-weight:600;color:var(--verde);text-decoration:none}
 .local a:hover{text-decoration:underline}
+.mapa{display:block;border-radius:var(--r-g);overflow:hidden;box-shadow:var(--sombra);background:var(--cartao);max-width:100%}
+.mapa img{display:block;width:100%;height:auto;max-width:100%}
+.legenda-mapa{display:flex;flex-wrap:wrap;gap:.4rem 1.2rem;margin:0;padding:0;list-style:none;font-size:.92rem;color:var(--suave)}
+.legenda-mapa li{display:flex;align-items:center;gap:.45rem}
+.legenda-mapa i{width:.7rem;height:.7rem;border-radius:50%;flex:0 0 auto}
 
 /* teste */
 .teste{background:var(--cartao);border-radius:var(--r-g);box-shadow:var(--sombra);padding:clamp(1.2rem,3.5vw,1.8rem);display:grid;gap:.9rem;max-width:44rem}
@@ -167,6 +172,17 @@ summary:focus-visible{outline:2px solid var(--verde);outline-offset:2px}
     <p class="vazio" id="vazio" hidden>Nada com esse nome. Tente “pilha” ou “esponja”.</p>
   </div>
   <article class="ficha" id="ficha" aria-live="polite"></article>
+</div></section>
+
+<section class="secao" id="mapa"><div class="wrap">
+  <div class="linha-topo"><h2>Mapa dos pontos</h2><p class="dica">Toque na imagem para abrir em tamanho cheio.</p></div>
+  <ul class="legenda-mapa">
+    <li><i style="background:var(--azul)"></i>Reciclus — lâmpadas</li>
+    <li><i style="background:var(--verde)"></i>Green Eletron — pilhas, baterias e eletrônicos</li>
+  </ul>
+  <a class="mapa" href="mapa.webp" target="_blank" rel="noopener">
+    <img src="mapa.webp" width="1400" height="781" alt="Mapa ilustrado de Joinville com os pontos de coleta da Reciclus marcados em azul e os da Green Eletron em verde, distribuídos pelos bairros" loading="lazy" decoding="async">
+  </a>
 </div></section>
 
 <section class="secao"><div class="wrap">
